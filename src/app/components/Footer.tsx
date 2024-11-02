@@ -21,6 +21,24 @@ const Footer = () => {
         <h3 className="font-medium text-xl uppercase mb-4">Social</h3>
         <ul className="flex items-center justify-end gap-5 flex-grow">
           <li>
+            <a
+              href="https://www.linkedin.com/in/anastasiia-drachuk/"
+              target="_blank"
+            >
+              <Icon name="linkedin" size={50} className={iconAppearance} />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/defaultnastia" target="_blank">
+              <Icon name="Github" size={50} className={iconAppearance} />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:anastayaaa@gmail.com">
+              <Icon name="gmail" size={50} className={iconAppearance} />
+            </a>
+          </li>
+          <li>
             <a href="tel:+34672509702">
               <Icon name="phone" size={50} className={iconAppearance} />
             </a>
@@ -31,26 +49,8 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a
-              href="https://www.linkedin.com/in/anastasiia-drachuk/"
-              target="_blank"
-            >
-              <Icon name="linkedin" size={50} className={iconAppearance} />
-            </a>
-          </li>
-          <li>
-            <a href="mailto:anastayaaa@gmail.com">
-              <Icon name="gmail" size={50} className={iconAppearance} />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/defaultnastia" target="_blank">
-              <Icon name="Github" size={50} className={iconAppearance} />
-            </a>
-          </li>
-          <li>
-            <a href="https://discord.com/invite/KBzV7ht2" target="_blank">
-              <Icon name="discord" size={50} className={iconAppearance} />
+            <a href="https://wa.me/34672509702" target="_blank">
+              <Icon name="whatsapp" size={50} className={iconAppearance} />
             </a>
           </li>
         </ul>
