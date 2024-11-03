@@ -5,6 +5,7 @@ import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import Icon from "./Icon";
 
 const Header = () => {
   const pathname = usePathname();
@@ -14,19 +15,19 @@ const Header = () => {
   const activeLink = "text-accent border-b-2 border-transparent px-0 mx-2";
 
   return (
-    <div className="px-32 h-20 flex justify-between items-center bg-stone-50 tracking-wider text-xl">
-      <div className="flex items-center gap-4">
+    <div className="px-8 tablet:px-10 desktop:px-32 h-20 flex justify-between tablet:justify-center desktop:justify-between items-center  bg-stone-50 tracking-wider text-xl">
+      <div className="tablet:hidden desktop:flex items-center gap-4">
         <Image
           src="/images/avatar.png"
           width={64}
           height={64}
           alt="Avatar"
-          className="rounded-full shadow border-2 border-accent"
+          className="block h-16 w-16 rounded-full shadow border-2 border-accent"
         />
-        <p>Anastasiia Drachuk</p>
+        <p className="hidden desktop:block">Anastasiia Drachuk</p>
       </div>
       <nav>
-        <ul className="flex gap-5 justify-center items-center">
+        <ul className=" hidden tablet:flex gap-8 justify-center items-center ">
           <li className={clsx(pathname == "/" ? activeLink : defaultLink)}>
             <Link href="/">Home</Link>
           </li>
@@ -47,6 +48,9 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <button className="tablet:hidden">
+        <Icon name="menu" className="stroke-orange-600 fill-none" />
+      </button>
     </div>
   );
 };
