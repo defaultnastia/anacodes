@@ -18,8 +18,8 @@ const MobileMenu = ({ isOpen = false, close }: MobileMenuProps) => {
   return (
     <div
       className={clsx(
-        "fixed w-screen h-40 bg-orange-600 overscroll-none duration-700 transition-all",
-        isOpen ? "top-0 opacity-100" : "top-[-160px] opacity-0"
+        "fixed w-screen h-56 bg-orange-600 overscroll-none duration-700 transition-all",
+        isOpen ? "top-0 opacity-100" : "top-[-224px] opacity-0"
       )}
     >
       <button

@@ -12,10 +12,11 @@ const activeLink = 'before:content-["⸺"] after:content-["⸺"]';
 const NavigationMobile = ({ pathname, close }: NavigationProps) => {
   return (
     <nav className="h-full flex justify-center items-center">
-      <ul className=" flex flex-col gap-1 justify-center items-center text-background">
+      <ul className=" flex flex-col gap-4 justify-center items-center text-background">
         <li className={clsx(pathname == "/" && activeLink)}>
           <Link
             href="/"
+            className="px-2"
             onClick={() => {
               close();
             }}
@@ -23,29 +24,38 @@ const NavigationMobile = ({ pathname, close }: NavigationProps) => {
             Home
           </Link>
         </li>
-        <li
-          className={clsx(pathname == "/projects" && activeLink)}
-          onClick={() => {
-            close();
-          }}
-        >
-          <Link href="/projects">Projects</Link>
+        <li className={clsx(pathname == "/projects" && activeLink)}>
+          <Link
+            href="/projects"
+            className="px-2"
+            onClick={() => {
+              close();
+            }}
+          >
+            Projects
+          </Link>
         </li>
-        <li
-          className={clsx(pathname == "/reviews" && activeLink)}
-          onClick={() => {
-            close();
-          }}
-        >
-          <Link href="/reviews">Reviews</Link>
+        <li className={clsx(pathname == "/reviews" && activeLink)}>
+          <Link
+            href="/reviews"
+            className="px-2"
+            onClick={() => {
+              close();
+            }}
+          >
+            Reviews
+          </Link>
         </li>
-        <li
-          className={clsx(pathname == "/contacts" && activeLink)}
-          onClick={() => {
-            close();
-          }}
-        >
-          <Link href="/contacts">Contacts</Link>
+        <li className={clsx(pathname == "/contacts" && activeLink)}>
+          <Link
+            href="/contacts"
+            className="px-2"
+            onClick={() => {
+              close();
+            }}
+          >
+            Contacts
+          </Link>
         </li>
       </ul>
     </nav>
