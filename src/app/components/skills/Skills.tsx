@@ -4,7 +4,7 @@ import skills from "src/data/stack.json";
 
 const Skills = () => {
   return (
-    <div className="px-8 tablet:px-10 desktop:px-32 min-h-128 py-12 flex flex-col gap-10 justify-center bg-gradient-to-r from-stone-100 from-10% via-stone-450 via-65% to-orange-250 to-100%">
+    <div className="px-8 tablet:px-10 desktop:px-32 min-h-128 py-12 flex flex-col gap-10 justify-center bg-gradient-to-r from-[#FFB147] from-52% via-[#FF6C63] via-65% to-[#B86ADF] to-100%">
       <h2 className="text-center font-medium text-2xl desktop:text-3xl uppercase mb-8">
         Skills
       </h2>

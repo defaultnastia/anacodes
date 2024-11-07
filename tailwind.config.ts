@@ -18,6 +18,7 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         accent: "var(--accent)",
+        brightAccent: "var(--bright-accent)",
         stone: {
           450: "#BAA5A5",
           150: "rgba(245, 245, 244, 0.24)",
@@ -31,9 +32,6 @@ const config: Config = {
       },
       maxWidth: {
         "100": "400px",
-      },
-      backgroundImage: {
-        hero: "url('/images/hero.jpg')",
       },
     },
   },

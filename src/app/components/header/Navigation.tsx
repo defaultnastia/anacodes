@@ -7,8 +7,8 @@ interface NavigationProps {
 }
 
 const defaultLink =
-  "border-b-2 border-transparent px-0 mx-2 hover:border-accent hover:px-2 hover:mx-0 ";
-const activeLink = "text-accent border-b-2 border-transparent px-0 mx-2";
+  "border-b-2 border-transparent px-0 mx-2 hover:border-brightAccent hover:px-2 hover:mx-0 ";
+const activeLink = "text-brightAccent border-b-2 border-transparent px-0 mx-2";
 
 const Navigation = ({ pathname }: NavigationProps) => {
   return (
