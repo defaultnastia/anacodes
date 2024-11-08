@@ -1,12 +1,16 @@
 import clsx from "clsx";
-import { Abril_Fatface, Permanent_Marker } from "next/font/google";
+import { Fraunces } from "next/font/google";
 import React from "react";
 import css from "./Hero.module.css";
+import Image from "next/image";
 
-const marker = Permanent_Marker({
+const marker = Fraunces({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "700"],
 });
+
+const accentClass =
+  "bg-gradient-to-r from-[#FFB147] from-52% via-[#FF6C63] via-65% to-[#B86ADF] to-100% bg-clip-text text-transparent font-bold";
 
 const Hero = () => {
   return (
@@ -21,61 +25,40 @@ const Hero = () => {
           <p
             className={clsx(
               css.running__line,
-              "font-medium text-2xl desktop:text-3xl uppercase max-w-80 tablet:max-w-xl"
+              marker.className,
+              "font-medium text-xl desktop:text-2xl uppercase max-w-80 tablet:max-w-xl"
             )}
           >
-            Hey, I’m Anastasiia Drachuk, but you can call me{" "}
-            <span
-              className={clsx(
-                marker.className,
-                "text-4xl text-foreground italic"
-              )}
-            >
-              Ana
-            </span>
+            Hey, I’m Anastasiia Drachuk, but you can call me Ana
           </p>
           <p
             className={clsx(
               css.running__line,
-              "font-medium text-2xl desktop:text-3xl uppercase max-w-80 tablet:max-w-xl"
+              marker.className,
+              "font-medium text-xl desktop:text-2xl uppercase max-w-80 tablet:max-w-xl"
             )}
           >
-            Hey, I’m Anastasiia Drachuk, but you can call me{" "}
-            <span
-              className={clsx(
-                marker.className,
-                "text-4xl text-foreground italic"
-              )}
-            >
-              Ana
-            </span>
+            Hey, I’m Anastasiia Drachuk, but you can call me Ana
           </p>
         </div>
       </div>
-      <div className="text-center text-foreground px-8 tablet:px-10 desktop:px-32 min-h-60 flex flex-col items-center justify-center gap-10 ">
-        <p>
+      <div className="px-8 py-16 tablet:px-10 desktop:px-32 flex items-center text-center">
+        <p className="w-1/3">
           As a{" "}
-          <span
-            className={clsx(
-              marker.className,
-              "text-3xl text-foreground italic"
-            )}
-          >
-            developer
-          </span>
+          <span className={clsx(marker.className, accentClass)}>developer</span>
           , I strive to create dynamic, responsive and visually appealing web
           applications.
         </p>
-        <p>
+        <Image
+          src="/images/avatar.png"
+          width={180}
+          height={180}
+          alt="Anastasiia's photo"
+          className="rounded-xl shadow-image m-auto"
+        />
+        <p className="w-1/3">
           As a{" "}
-          <span
-            className={clsx(
-              marker.className,
-              "text-3xl text-foreground italic"
-            )}
-          >
-            former QA
-          </span>
+          <span className={clsx(marker.className, accentClass)}>former QA</span>
           , I strive to do it well.
         </p>
       </div>

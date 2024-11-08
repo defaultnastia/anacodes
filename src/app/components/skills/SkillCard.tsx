@@ -7,8 +7,8 @@ interface SkillCardProps {
 
 const SkillCard = ({ skill }: SkillCardProps) => {
   return (
-    <div className="h-32 w-32 bg-stone-150 rounded-lg hover:relative hover:scale-125 carousel-item mr-10 last-of-type:mr-0  flex flex-col items-center justify-center gap-2 shadow">
-      <Icon name={skill} size={52} />
+    <div className="h-24 w-24 bg-stone-150 rounded-lg hover:relative hover:scale-125 carousel-item mr-10 last-of-type:mr-0  flex flex-col items-center justify-center gap-2 shadow">
+      <Icon name={skill} size={40} />
       <p className="text-sm text-stone-600">{skill}</p>
     </div>
   );

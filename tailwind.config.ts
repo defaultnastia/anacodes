@@ -30,8 +30,15 @@ const config: Config = {
       minHeight: {
         "128": "32rem",
       },
+      width: {
+        "140": "560px",
+      },
       maxWidth: {
         "100": "400px",
+      },
+      boxShadow: {
+        image:
+          "-2px -2px 8px 2px #ffb147, 0 0 10px 2px #ff6c63, 2px 2px 10px 4px #a21caf",
       },
     },
   },

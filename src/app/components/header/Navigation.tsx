@@ -12,9 +12,14 @@ const activeLink = "text-brightAccent border-b-2 border-transparent px-0 mx-2";
 
 const Navigation = ({ pathname }: NavigationProps) => {
   return (
-    <nav>
+    <nav className="w-full">
       <ul className=" hidden tablet:flex gap-8 justify-center items-center ">
-        <li className={clsx(pathname == "/" ? activeLink : defaultLink)}>
+        <li
+          className={clsx(
+            pathname == "/" ? activeLink : defaultLink,
+            "flex-grow"
+          )}
+        >
           <Link href="/">Home</Link>
         </li>
         <li

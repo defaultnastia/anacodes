@@ -18,9 +18,6 @@ const Header = () => {
   return (
     <>
       <div className="px-8 tablet:px-10 desktop:px-32 h-20 flex justify-between tablet:justify-center desktop:justify-between items-center  bg-stone-50 tracking-wider text-xl">
-        <div className="tablet:hidden desktop:flex items-center gap-4">
-          <p className="hidden desktop:block">Anastasiia Drachuk</p>
-        </div>
         <Navigation pathname={pathname} />
         <button
           className="cursor-pointer tablet:hidden"
