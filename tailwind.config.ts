@@ -32,9 +32,16 @@ const config: Config = {
       },
       width: {
         "140": "560px",
+        calc: "calc((100% - 48px) / 2)",
       },
       maxWidth: {
         "100": "400px",
+        "140": "560px",
+        "1/2": "50%",
+        "1/3": "33%",
+      },
+      minWidth: {
+        "1/3": "33%",
       },
       boxShadow: {
         image:

@@ -19,26 +19,34 @@ const responsive = {
     items: 10,
   },
   tablet: {
-    breakpoint: { max: 1280, min: 768 },
-    items: 8,
+    breakpoint: { max: 1279, min: 800 },
+    items: 7,
+  },
+  smallTablet: {
+    breakpoint: { max: 799, min: 620 },
+    items: 5,
   },
   mobile: {
-    breakpoint: { max: 767, min: 0 },
+    breakpoint: { max: 619, min: 420 },
     items: 4,
+  },
+  smallMobile: {
+    breakpoint: { max: 419, min: 0 },
+    items: 3,
   },
 };
 
 const Skills = () => {
   return (
-    <div className="px-8 tablet:px-10 desktop:px-32 py-12 bg-gradient-to-r from-[#FFB147] from-52% via-[#FF6C63] via-65% to-[#B86ADF] to-100%">
-      {/* <h2
+    <div className="py-8 tablet:py-12 bg-gradient-to-r from-[#FFB147] from-52% via-[#FF6C63] via-65% to-[#B86ADF] to-100%">
+      <h2
         className={clsx(
           marker.className,
           "text-center text-xl text-background desktop:text-2xl uppercase font-semibold"
         )}
       >
         Technologies
-      </h2> */}
+      </h2>
       <Carousel
         responsive={responsive}
         ssr={true}

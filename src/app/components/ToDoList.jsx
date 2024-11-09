@@ -43,10 +43,10 @@ const ToDoList = () => {
             </p>
           </li>
           <li>
-            <h4 className="font-semibold">Reviews Page:</h4>
+            <h4 className="font-semibold">Recommendations Page:</h4>
             <p>
-              Fetch projects from back-end, on BE copy reviews from the LI,
-              check for the integration, Add ability to leave a review with
+              Fetch projects from back-end, on BE copy recommendations from the
+              LI, check for the integration, Add ability to leave a review with
               Google auth.
             </p>
           </li>

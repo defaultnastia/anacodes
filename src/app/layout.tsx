@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Lato } from "next/font/google";
 import Header from "./components/header/Header";
-import Footer from "./components/Footer";
+import Footer from "./components/footer/Footer";
 import clsx from "clsx";
 
 export const metadata: Metadata = {

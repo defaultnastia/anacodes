@@ -12,14 +12,25 @@ const accentClass = clsx(
   "bg-gradient-to-r from-[#FFB147] from-52% via-[#FF6C63] via-65% to-[#B86ADF] to-100% bg-clip-text text-transparent font-bold"
 );
 
+const iconClass = "text-5xl tablet:text-6xl absolute -top-8 tablet:-top-10";
+
 const cardClass =
-  "flex justify-center items-center w-140 px-4 py-8 rounded-xl  shadow-lg";
+  "flex flex-col relative justify-center items-center max-w-lg tablet:max-w-none desktop:w-calc px-4 py-8 rounded-xl  shadow-lg";
 
 const About = () => {
   return (
-    <div className="px-8 tablet:px-10 desktop:px-32 py-12">
-      <ul className="flex flex-wrap justify-between gap-y-10">
+    <div className="p-8 tablet:px-10 desktop:px-32 tablet:py-12 flex flex-col gap-12">
+      <h2
+        className={clsx(
+          marker.className,
+          "text-center text-xl desktop:text-2xl uppercase font-semibold"
+        )}
+      >
+        Get to know me
+      </h2>
+      <ul className="w-full flex flex-wrap flex-col desktop:flex-row items-center justify-center gap-12">
         <li className={clsx(cardClass, "border-[#f8b6598f]")}>
+          <p className={iconClass}>👩‍💻</p>
           <p>
             I spent several years in QA, working on both manual and automated
             testing and even leading teams. I’ve been lucky to work for big
@@ -30,6 +41,7 @@ const About = () => {
           </p>
         </li>
         <li className={clsx(cardClass, "border-[#ff6b6385]")}>
+          <p className={iconClass}>💡</p>
           <p>
             Eventually, I got curious about development, so I learned JavaScript
             and HTML/CSS. I loved it and kept going with React, Redux,
@@ -38,8 +50,8 @@ const About = () => {
             broaden my <span className={accentClass}>hard skills</span>.
           </p>
         </li>
-        <li className="w-full flex items-center justify-center"></li>
         <li className={clsx(cardClass, "border-[#b86adf6e]")}>
+          <p className={iconClass}>🤝</p>
           <p>
             My QA experience really built up my{" "}
             <span className={accentClass}>teamwork skills</span> —
@@ -50,6 +62,7 @@ const About = () => {
           </p>
         </li>
         <li className={clsx(cardClass, "border-[#f8b6598f]")}>
+          <p className={iconClass}>🦄</p>
           <p>
             So far, I’ve led and contributed to group{" "}
             <span className={accentClass}>projects</span> as a developer and

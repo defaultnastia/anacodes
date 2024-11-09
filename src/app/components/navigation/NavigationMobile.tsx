@@ -35,15 +35,15 @@ const NavigationMobile = ({ pathname, close }: NavigationProps) => {
             Projects
           </Link>
         </li>
-        <li className={clsx(pathname == "/reviews" && activeLink)}>
+        <li className={clsx(pathname == "/recommendations" && activeLink)}>
           <Link
-            href="/reviews"
+            href="/recommendations"
             className="px-2"
             onClick={() => {
               close();
             }}
           >
-            Reviews
+            Recommendations
           </Link>
         </li>
         <li className={clsx(pathname == "/contacts" && activeLink)}>
