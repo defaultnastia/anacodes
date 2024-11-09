@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Roboto } from "next/font/google";
+import { Lato } from "next/font/google";
 import Header from "./components/header/Header";
-import Footer from "./components/Footer";
+import Footer from "./components/footer/Footer";
 import clsx from "clsx";
 
 export const metadata: Metadata = {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Anastasiia's resume app",
 };
 
-const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500", "700"] });
+const lato = Lato({ subsets: ["latin"], weight: ["400", "700", "900"] });
 
 export default function RootLayout({
   children,
@@ -22,7 +22,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className={clsx(roboto.className, "min-h-screen flex flex-col")}>
+      <body className={clsx(lato.className, "min-h-screen flex flex-col")}>
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

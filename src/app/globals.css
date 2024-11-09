@@ -4,8 +4,8 @@
 
 :root {
   --background: #f5f5f4;
-  --foreground: #44403c;
-  --accent: #f97316;
+  --foreground: #262626;
+  --accent: #b86adf;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -13,6 +13,7 @@
     --background: #f5f5f4;
     --foreground: #44403c;
     --accent: #f97316;
+    --bright-accent: #a21caf;
   }
 } */
 

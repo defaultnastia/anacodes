@@ -18,6 +18,7 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         accent: "var(--accent)",
+        brightAccent: "var(--bright-accent)",
         stone: {
           450: "#BAA5A5",
           150: "rgba(245, 245, 244, 0.24)",
@@ -29,11 +30,22 @@ const config: Config = {
       minHeight: {
         "128": "32rem",
       },
+      width: {
+        "140": "560px",
+        calc: "calc((100% - 48px) / 2)",
+      },
       maxWidth: {
         "100": "400px",
+        "140": "560px",
+        "1/2": "50%",
+        "1/3": "33%",
       },
-      backgroundImage: {
-        hero: "url('/images/hero.jpg')",
+      minWidth: {
+        "1/3": "33%",
+      },
+      boxShadow: {
+        image:
+          "-2px -2px 8px 2px #ffb147, 0 0 10px 2px #ff6c63, 2px 2px 10px 4px #a21caf",
       },
     },
   },
