@@ -1,5 +1,6 @@
 import React from "react";
-import ToDoList from "../components/ToDoList.jsx";
+import ToDoList from "../components/ToDoList";
+import Socials from "../components/contacts/Socials";
 
 const ContactsPage = () => {
   return (
@@ -7,6 +8,7 @@ const ContactsPage = () => {
       <h2 className="text-center font-medium text-2xl uppercase mb-4">
         Contacts Page
       </h2>
+      <Socials className="w-fit m-auto" />
       <ToDoList></ToDoList>
     </div>
   );
