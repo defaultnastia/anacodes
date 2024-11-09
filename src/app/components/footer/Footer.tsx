@@ -1,14 +1,26 @@
 import React from "react";
-import Icon from "./Icon";
+import Icon from "../Icon";
+import { Fraunces } from "next/font/google";
+import clsx from "clsx";
+
+const marker = Fraunces({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+});
 
 const iconAppearance =
   "drop-shadow-sm fill-stone-500 hover:fill-accent hover:cursor-pointer";
 
 const Footer = () => {
   return (
-    <div className="px-8 tablet:px-10 desktop:px-32 w-full py-10 flex flex-col tablet:flex-row items-center tablet:justify-between">
+    <div className="p-8 tablet:px-10 desktop:px-32 w-full tablet:py-10 flex flex-col tablet:flex-row items-center tablet:justify-between">
       <div className="tablet:max-w-80 desktop:max-w-100 text-center tablet:text-left">
-        <h3 className="font-medium text-l uppercase mb-4">
+        <h3
+          className={clsx(
+            marker.className,
+            "font-medium text-l uppercase mb-4"
+          )}
+        >
           Anastasiia Drachuk
         </h3>
         <p className="text-stone-500 text-sm">
@@ -18,10 +30,15 @@ const Footer = () => {
         </p>
       </div>
       <div className="max-w-2xl text-end flex flex-col">
-        <h3 className="hidden tablet:block font-medium text-xl uppercase mb-4">
+        <h3
+          className={clsx(
+            marker.className,
+            "hidden tablet:block font-medium text-xl uppercase mb-4"
+          )}
+        >
           Social
         </h3>
-        <ul className="flex items-center justify-center tablet:justify-end gap-2 desktop:gap-5 flex-grow pt-5">
+        <ul className="flex items-center justify-center tablet:justify-end gap-2 desktop:gap-5 flex-grow py-5 tablet:pt-0">
           <li>
             <a
               href="https://www.linkedin.com/in/anastasiia-drachuk/"
