@@ -6,14 +6,10 @@ interface NavigationProps {
   pathname: string;
 }
 
-const accentClass =
-  "bg-gradient-to-r from-[#FFB147] from-52% via-[#FF6C63] via-65% to-[#B86ADF] to-100% bg-clip-text text-transparent";
 const defaultLink =
-  "border-b-2 border-transparent px-4 mx-0 hover:border-accent hover:px-0 hover:mx-4 ";
-const activeLink = clsx(
-  accentClass,
-  "border-2 border-accent rounded-xl px-4 mx-0"
-);
+  "flex items-center py-2 border-b-2 border-transparent px-4 mx-0 hover:border-accent hover:px-0 hover:mx-4 ";
+const activeLink =
+  "flex items-center py-2 border-2 border-accent rounded-xl px-4 mx-0 text-accent font-bold";
 
 const Navigation = ({ pathname }: NavigationProps) => {
   return (
