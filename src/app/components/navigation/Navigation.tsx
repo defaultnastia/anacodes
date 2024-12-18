@@ -15,25 +15,39 @@ const Navigation = ({ pathname }: NavigationProps) => {
   return (
     <nav className="w-full">
       <ul className=" hidden tablet:flex gap-8 justify-center items-center">
-        <li className={clsx(pathname == "/" ? activeLink : defaultLink)}>
-          <Link href="/">Home</Link>
+        <li>
+          <Link
+            href="/"
+            className={clsx(pathname == "/" ? activeLink : defaultLink)}
+          >
+            Home
+          </Link>
         </li>
-        <li
-          className={clsx(pathname == "/projects" ? activeLink : defaultLink)}
-        >
-          <Link href="/projects">Projects</Link>
+        <li>
+          <Link
+            href="/projects"
+            className={clsx(pathname == "/projects" ? activeLink : defaultLink)}
+          >
+            Projects
+          </Link>
         </li>
-        <li
-          className={clsx(
-            pathname == "/recommendations" ? activeLink : defaultLink
-          )}
-        >
-          <Link href="/recommendations">Recommendations</Link>
+        <li>
+          <Link
+            href="/recommendations"
+            className={clsx(
+              pathname == "/recommendations" ? activeLink : defaultLink
+            )}
+          >
+            Recommendations
+          </Link>
         </li>
-        <li
-          className={clsx(pathname == "/contacts" ? activeLink : defaultLink)}
-        >
-          <Link href="/contacts">Contacts</Link>
+        <li>
+          <Link
+            href="/contacts"
+            className={clsx(pathname == "/contacts" ? activeLink : defaultLink)}
+          >
+            Contacts
+          </Link>
         </li>
       </ul>
     </nav>

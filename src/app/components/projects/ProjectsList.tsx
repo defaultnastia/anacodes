@@ -8,7 +8,7 @@ type Props = {
 
 const ProjectsList = ({ projects }: Props) => {
   return (
-    <ul className="flex flex-col gap-8 py-8">
+    <ul className="flex flex-col gap-32 py-8">
       {projects.map((project) => (
         <li key={project.id}>
           <Project project={project} />

@@ -1,9 +1,9 @@
 [
   {
     "id": "backpack",
-    "title": "Backpack",
-    "summary": "Helps users track every aspect of the trip in one place",
-    "fullDescription": "This is my personal pet project, from mockup, to frontend, to backend. The app allows to input flight details, accommodations, activities, collaborate with friends, and save the itinerary to PDF. Currently it is in progress, roadmap can be found in README file.",
+    "title": "Backpack (In Progress)",
+    "summary": "Backpack is an application designed to help users manage every aspect of their trips in one place. The frontend is developed with TypeScript and Next.js, while the backend is planned to feature a modular architecture built using Node.js, Express, TypeScript, and MongoDB.",
+    "fullDescription": "This is my personal pet project, where I handled everything from the mockup to the frontend and backend development. The app allows users to input flight details, accommodations, activities, collaborate with friends, and save their itinerary as a PDF. It's currently a work in progress, and the roadmap is available in the README file.",
     "stack": [
       "TypeScript",
       "NextJs",
@@ -14,6 +14,10 @@
     ],
     "image": "backpack",
     "links": [
+      {
+        "name": "Production",
+        "link": "https://bagpack-travel-app.vercel.app/"
+      },
       {
         "name": "GitHub",
         "link": "https://github.com/defaultnastia/bagpack-travel-app"
@@ -26,9 +30,9 @@
   },
   {
     "id": "aquaTracker",
-    "title": "",
-    "summary": "BE service for AquaTracker, app that helps to control daily water consumption",
-    "fullDescription": "This application was implemented as a graduation group project in GoIT. It allows CRUD operations for User and Water entities. My parts: BE team leading, code review, app architecture, Swagger docs.",
+    "title": "AquaTracker",
+    "summary": "The backend service for AquaTracker app designed to help users monitor their daily water consumption — is built using Node.js, Express, and MongoDB. It features JWT-based authorization for secure user access.",
+    "fullDescription": "This application was developed as a graduation group project at GoIT. It allows CRUD operations for User and Water entities. My contributions included backend team leading, code reviews, app architecture, and creating the Swagger documentation",
     "stack": [
       "NodeJS",
       "Multer",
@@ -40,11 +44,12 @@
     ],
     "image": "aquaTracker",
     "links": [
+      { "name": "Production", "link": "https://aqua-track.netlify.app/" },
       {
         "name": "GitHub",
         "link": "https://github.com/defaultnastia/water-tracker-be"
       },
-      { "name": "Production", "link": "https://aqua-track.netlify.app/" },
+
       {
         "name": "Swagger",
         "link": "https://water-tracker-be-production.up.railway.app/api/docs"
@@ -54,26 +59,26 @@
   {
     "id": "wheels",
     "title": "Wheels",
-    "summary": "Car rental app",
-    "fullDescription": "A web-application for a car rental company, where user can check info about the available cars and contact the rental service. Was implemented as a personal project during studying in GoIT. Uses mockAPI service.",
+    "summary": "The Wheels application is designed to let users explore car rental options offered by a company. It serves as a straightforward demonstration of my skills in React, Redux, and API integration.",
+    "fullDescription": "This web application is designed for a car rental company, allowing users to view information and details about available cars and contact the rental service. It was developed as a personal project during my studies at GoIT and utilizes the mockAPI service for data handling.",
     "stack": ["JavaScript", "React", "ReduxToolkit", "Axios", "REST API"],
     "image": "wheels",
     "links": [
       {
-        "name": "GitHub",
-        "link": "https://github.com/defaultnastia/wheels-car-rental"
-      },
-      {
         "name": "Production",
         "link": "https://relaxed-donut-dd6a9d.netlify.app/"
+      },
+      {
+        "name": "GitHub",
+        "link": "https://github.com/defaultnastia/wheels-car-rental"
       }
     ]
   },
   {
     "id": "moneyGuard",
     "title": "Money Guard",
-    "summary": "Financial dashboard app",
-    "fullDescription": "A financial dashboard for control of expenses and income. Was implemented as a team project in GoIT. My parts are: team leading, creating base app, code review, Redux store.",
+    "summary": "This application was quite a challenging project, as I took on the role of team lead, managing colleagues with diverse backgrounds and varying skill levels. While it's not perfect, let's be honest - neither we are. ",
+    "fullDescription": "This financial dashboard helps users track their expenses and income. It was developed as a team project at GoIT. My contributions included team leading, creating the base application, conducting code reviews, and setting up the Redux store",
     "stack": [
       "TypeScript",
       "React",
@@ -85,20 +90,20 @@
     "image": "moneyGuard",
     "links": [
       {
-        "name": "GitHub",
-        "link": "https://github.com/defaultnastia/project-digital-dragons-money-guard"
-      },
-      {
         "name": "Production",
         "link": "https://project-digital-dragons-money-guard.vercel.app/"
+      },
+      {
+        "name": "GitHub",
+        "link": "https://github.com/defaultnastia/project-digital-dragons-money-guard"
       }
     ]
   },
   {
     "id": "nerium",
     "title": "Nerium",
-    "summary": "Financial dashboard app",
-    "fullDescription": "A financial dashboard for easy control of expenses, income, and savings. Was implemented as a team project during the internship in ElifTech. Unfortunately, repos are private and production is no longer available. My parts are: admin access on BE, admin UI, app localization, creating desktop mockup in Figma.",
+    "summary": "Another financial app was my first attempt at creating a mockup for an entire application. This experience deepened my respect for UI/UX designers. In addition, I contributed to both the frontend and backend, utilizing Next.js on top for MERN stack.",
+    "fullDescription": "This financial dashboard simplifies the management of expenses, income, and savings. It was developed as a team project during my internship at ElifTech. Unfortunately, the repositories are private, and the production environment is no longer available. My contributions included admin access on the backend, admin UI development, app localization, and creating the desktop mockup in Figma.",
     "stack": [
       "TypeScript",
       "NodeJS",

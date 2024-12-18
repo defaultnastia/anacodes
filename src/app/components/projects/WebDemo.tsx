@@ -1,10 +1,30 @@
+import clsx from "clsx";
+import Image from "next/image";
 import React from "react";
 
 type Props = {
-  image: string;
+  projectId: string;
+  className?: string;
 };
-const WebDemo = ({ image }: Props) => {
-  return <p>web {image}</p>;
+const WebDemo = ({ projectId, className }: Props) => {
+  return (
+    <div className={clsx(className, "relative w-[500px]")}>
+      <Image
+        src={`/images/projects/web-${projectId}.png`}
+        width={400}
+        height={280}
+        alt="project demo image"
+        className="relative top-5 left-14 object-cover h-[228px] w-[390px]"
+      />
+      <Image
+        src="/images/macbook.webp"
+        width={500}
+        height={280}
+        alt="laptop with project demo"
+        className="absolute top-0 left-0"
+      />
+    </div>
+  );
 };
 
 export default WebDemo;
