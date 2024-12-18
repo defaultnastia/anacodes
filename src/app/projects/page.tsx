@@ -1,13 +1,12 @@
 import React from "react";
-import ToDoList from "../components/ToDoList";
+import ProjectsList from "../components/projects/ProjectsList";
+
+import data from "../../data/projects.json";
 
 const ProjectsPage = () => {
   return (
     <div className="px-8 tablet:px-10 desktop:px-32 py-12">
-      <h2 className="text-center font-medium text-2xl uppercase mb-4">
-        Projects Page
-      </h2>
-      <ToDoList></ToDoList>
+      <ProjectsList projects={data} />
     </div>
   );
 };

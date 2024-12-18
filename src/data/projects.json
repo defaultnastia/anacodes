@@ -1,0 +1,125 @@
+[
+  {
+    "id": "backpack",
+    "title": "Backpack",
+    "summary": "Helps users track every aspect of the trip in one place",
+    "fullDescription": "This is my personal pet project, from mockup, to frontend, to backend. The app allows to input flight details, accommodations, activities, collaborate with friends, and save the itinerary to PDF. Currently it is in progress, roadmap can be found in README file.",
+    "stack": [
+      "TypeScript",
+      "NextJs",
+      "AppRouter",
+      "CSS Modules",
+      "MUI",
+      "TailWind"
+    ],
+    "image": "backpack",
+    "links": [
+      {
+        "name": "GitHub",
+        "link": "https://github.com/defaultnastia/bagpack-travel-app"
+      },
+      {
+        "name": "Figma",
+        "link": "https://www.figma.com/community/file/1450993762385262493/bagpack"
+      }
+    ]
+  },
+  {
+    "id": "aquaTracker",
+    "title": "",
+    "summary": "BE service for AquaTracker, app that helps to control daily water consumption",
+    "fullDescription": "This application was implemented as a graduation group project in GoIT. It allows CRUD operations for User and Water entities. My parts: BE team leading, code review, app architecture, Swagger docs.",
+    "stack": [
+      "NodeJS",
+      "Multer",
+      "Express",
+      "REST API",
+      "MongoDB",
+      "Mongoose",
+      "Swagger"
+    ],
+    "image": "aquaTracker",
+    "links": [
+      {
+        "name": "GitHub",
+        "link": "https://github.com/defaultnastia/water-tracker-be"
+      },
+      { "name": "Production", "link": "https://aqua-track.netlify.app/" },
+      {
+        "name": "Swagger",
+        "link": "https://water-tracker-be-production.up.railway.app/api/docs"
+      }
+    ]
+  },
+  {
+    "id": "wheels",
+    "title": "Wheels",
+    "summary": "Car rental app",
+    "fullDescription": "A web-application for a car rental company, where user can check info about the available cars and contact the rental service. Was implemented as a personal project during studying in GoIT. Uses mockAPI service.",
+    "stack": ["JavaScript", "React", "ReduxToolkit", "Axios", "REST API"],
+    "image": "wheels",
+    "links": [
+      {
+        "name": "GitHub",
+        "link": "https://github.com/defaultnastia/wheels-car-rental"
+      },
+      {
+        "name": "Production",
+        "link": "https://relaxed-donut-dd6a9d.netlify.app/"
+      }
+    ]
+  },
+  {
+    "id": "moneyGuard",
+    "title": "Money Guard",
+    "summary": "Financial dashboard app",
+    "fullDescription": "A financial dashboard for control of expenses and income. Was implemented as a team project in GoIT. My parts are: team leading, creating base app, code review, Redux store.",
+    "stack": [
+      "TypeScript",
+      "React",
+      "ReduxToolkit",
+      "TailWind",
+      "Axios",
+      "REST API"
+    ],
+    "image": "moneyGuard",
+    "links": [
+      {
+        "name": "GitHub",
+        "link": "https://github.com/defaultnastia/project-digital-dragons-money-guard"
+      },
+      {
+        "name": "Production",
+        "link": "https://project-digital-dragons-money-guard.vercel.app/"
+      }
+    ]
+  },
+  {
+    "id": "nerium",
+    "title": "Nerium",
+    "summary": "Financial dashboard app",
+    "fullDescription": "A financial dashboard for easy control of expenses, income, and savings. Was implemented as a team project during the internship in ElifTech. Unfortunately, repos are private and production is no longer available. My parts are: admin access on BE, admin UI, app localization, creating desktop mockup in Figma.",
+    "stack": [
+      "TypeScript",
+      "NodeJS",
+      "Express",
+      "NextJs",
+      "AppRouter",
+      "Zustand",
+      "Axios",
+      "REST API",
+      "MongoDB",
+      "Mongoose",
+      "TailWind",
+      "i18n",
+      "next-intl"
+    ],
+    "image": "nerium",
+    "links": [
+      {
+        "name": "Figma",
+        "link": "https://www.figma.com/community/file/1450985759209826202/nerium-project"
+      }
+    ]
+  }
+]
