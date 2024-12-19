@@ -18,7 +18,7 @@ const LinksSection = ({ links, className }: Props) => {
       </li>
       {links.map((link) => (
         <li key={link.link} className={linkClass}>
-          <a href={link.link} className="text-nowrap">
+          <a href={link.link} className="text-nowrap" target="_blank">
             {link.name} ↗
           </a>
         </li>
