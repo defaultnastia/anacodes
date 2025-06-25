@@ -4,30 +4,28 @@
 
 /* Light theme (default) */
 :root {
-  --background: #f8fafc;
+  --background: #fbfbf9;
   --foreground: #1e293b;
-  --accent: #38bdf8;
-  --bright-accent: #7dd3fc;
-  --faded-accent: #2f96c2cc;
+  --accent: #068e3f;
+  --faded-accent: #068e3f98;
 }
 
 /* Dark theme (toggle via .dark class) */
 .dark {
   --background: #0f172a;
-  --foreground: #f8fafc;
+  --foreground: #f9fafb;
   --accent: #3b82f6;
-  --bright-accent: #60a5fa;
   --faded-accent: #2f96c2cc;
 }
 
 /* Accent gradients */
 
 .bg-gradient-accent {
-  @apply bg-gradient-to-r from-[#b2e4f9] to-[#5f9ecf];
+  @apply bg-gradient-to-r from-accent to-fadedAccent;
 }
 
 .text-gradient-accent {
-  @apply bg-gradient-to-r from-accent from-0% via-foreground via-50% to-accent to-60% bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-accent from-0% via-fadedAccent via-50% to-accent to-60% bg-clip-text text-transparent;
 }
 
 * {

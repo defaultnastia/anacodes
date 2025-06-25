@@ -34,7 +34,7 @@ const Hero = () => (
           width={512}
           height={180}
           alt="Portrait of Anastasiia Drachuk, web developer"
-          className="mobile:h-1/2 tablet:w-52 tablet:h-52 tablet:rounded-full desktop:w-1/3 desktop:h-full desktop:rounded-none object-cover tablet:m-4 desktop:m-0"
+          className="h-96 tablet:w-52 tablet:h-52 tablet:rounded-full desktop:w-96 desktop:h-full desktop:rounded-none object-cover tablet:m-4 desktop:m-0"
           role="img"
         />
       </div>

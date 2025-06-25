@@ -18,7 +18,6 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         accent: "var(--accent)",
-        brightAccent: "var(--bright-accent)",
         fadedAccent: "var(--faded-accent)",
       },
       minHeight: {
