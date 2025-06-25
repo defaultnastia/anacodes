@@ -2,20 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Light theme (default) */
 :root {
-  --background: #f5f5f4;
-  --foreground: #262626;
-  --accent: #b86adf;
+  --background: #f8fafc;
+  --foreground: #1e293b;
+  --accent: #38bdf8;
+  --bright-accent: #7dd3fc;
+  --faded-accent: #2f96c2cc;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #f5f5f4;
-    --foreground: #44403c;
-    --accent: #f97316;
-    --bright-accent: #a21caf;
-  }
-} */
+/* Dark theme (toggle via .dark class) */
+.dark {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --accent: #3b82f6;
+  --bright-accent: #60a5fa;
+  --faded-accent: #2f96c2cc;
+}
+
+/* Accent gradients */
+
+.bg-gradient-accent {
+  @apply bg-gradient-to-r from-[#b2e4f9] to-[#5f9ecf];
+}
+
+.text-gradient-accent {
+  @apply bg-gradient-to-r from-accent from-0% via-foreground via-50% to-accent to-60% bg-clip-text text-transparent;
+}
 
 * {
   transition: 0.15s;

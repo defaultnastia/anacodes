@@ -1,6 +1,7 @@
 import React from "react";
 import Icon from "../Icon";
 import clsx from "clsx";
+import data from "../../../data/socials.json";
 
 const iconAppearance =
   "drop-shadow-sm fill-stone-500 hover:fill-accent hover:cursor-pointer";
@@ -17,39 +18,18 @@ const Socials = ({ className }: SocialsProps) => {
         className
       )}
     >
-      <li>
-        <a
-          href="https://www.linkedin.com/in/anastasiia-drachuk/"
-          target="_blank"
-        >
-          <Icon name="linkedin" size={40} className={iconAppearance} />
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/defaultnastia" target="_blank">
-          <Icon name="Github" size={40} className={iconAppearance} />
-        </a>
-      </li>
-      <li>
-        <a href="mailto:anastayaaa@gmail.com">
-          <Icon name="gmail" size={40} className={iconAppearance} />
-        </a>
-      </li>
-      <li>
-        <a href="tel:+34672509702">
-          <Icon name="phone" size={40} className={iconAppearance} />
-        </a>
-      </li>
-      <li>
-        <a href="https://t.me/nastiabydefault" target="_blank">
-          <Icon name="telegram" size={40} className={iconAppearance} />
-        </a>
-      </li>
-      <li>
-        <a href="https://wa.me/34672509702" target="_blank">
-          <Icon name="whatsapp" size={40} className={iconAppearance} />
-        </a>
-      </li>
+      {data.map(({ href, icon, label }) => (
+        <li key={icon}>
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+          >
+            <Icon name={icon} size={40} className={iconAppearance} />
+          </a>
+        </li>
+      ))}
     </ul>
   );
 };

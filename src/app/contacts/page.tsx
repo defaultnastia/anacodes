@@ -5,11 +5,10 @@ import Socials from "../components/contacts/Socials";
 const ContactsPage = () => {
   return (
     <div className="px-8 tablet:px-10 desktop:px-32 py-12">
-      <h2 className="text-center font-medium text-2xl uppercase mb-4">
-        Contacts Page
-      </h2>
-      <Socials className="w-fit m-auto" />
-      <ToDoList></ToDoList>
+      <div className="w-fit m-auto border-2 pt-0 tablet:pt-6 px-4 tablet:px-12 rounded-lg border-accent flex justify-center mb-8">
+        <Socials />
+      </div>
+      <ToDoList />
     </div>
   );
 };

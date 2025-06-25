@@ -18,8 +18,7 @@ const marker = Fraunces({
 
 const accentClass = clsx(
   marker.className,
-  "w-fit bg-gradient-to-r from-[#FFB147] from-52% via-[#FF6C63] via-65% to-[#B86ADF] to-100% bg-clip-text text-transparent font-bold",
-  "uppercase text-2xl"
+  "w-fit text-gradient-accent font-bold uppercase text-2xl"
 );
 
 const Project = ({ project }: Props) => {

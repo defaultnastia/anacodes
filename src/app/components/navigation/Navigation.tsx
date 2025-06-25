@@ -33,16 +33,6 @@ const Navigation = ({ pathname }: NavigationProps) => {
         </li>
         <li>
           <Link
-            href="/recommendations"
-            className={clsx(
-              pathname == "/recommendations" ? activeLink : defaultLink
-            )}
-          >
-            Recommendations
-          </Link>
-        </li>
-        <li>
-          <Link
             href="/contacts"
             className={clsx(pathname == "/contacts" ? activeLink : defaultLink)}
           >

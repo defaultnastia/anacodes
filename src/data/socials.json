@@ -1,0 +1,32 @@
+[
+  {
+    "href": "https://www.linkedin.com/in/anastasiia-drachuk/",
+    "icon": "linkedin",
+    "label": "LinkedIn"
+  },
+  {
+    "href": "https://github.com/defaultnastia",
+    "icon": "Github",
+    "label": "GitHub"
+  },
+  {
+    "href": "mailto:anastayaaa@gmail.com",
+    "icon": "gmail",
+    "label": "Gmail"
+  },
+  {
+    "href": "tel:+34672509702",
+    "icon": "phone",
+    "label": "Phone"
+  },
+  {
+    "href": "https://t.me/nastiabydefault",
+    "icon": "telegram",
+    "label": "Telegram"
+  },
+  {
+    "href": "https://wa.me/34672509702",
+    "icon": "whatsapp",
+    "label": "WhatsApp"
+  }
+]
