@@ -39,7 +39,7 @@ const config: Config = {
       boxShadow: {
         image:
           "-2px -2px 8px 2px #ffb147, 0 0 10px 2px #ff6c63, 2px 2px 10px 4px #a21caf",
-        theme: "0 4px 12px rgba(56, 189, 248, 0.15)",
+        theme: "0 4px 12px rgba(0, 0, 0, 0.06)",
       },
     },
   },

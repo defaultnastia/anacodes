@@ -1,20 +1,19 @@
-[
-  "HTML5",
-  "CSS3",
-  "Tailwind",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "ReactRouter",
-  "Redux",
-  "ReduxToolKit",
-  "NextJs",
-  "i18next",
-  "NodeJS",
-  "Express",
-  "Mongo",
-  "Mongoose",
-  "Swagger",
-  "Github",
-  "OWASPTop10"
-]
+{
+  "frontend": [
+    "HTML5",
+    "CSS3",
+    "Tailwind",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "ReactRouter",
+    "Redux",
+    "ReduxToolKit",
+    "NextJs",
+    "i18next",
+    "StyledComponents"
+  ],
+  "backend": ["NodeJS", "Express", "Mongo", "Mongoose", "Swagger"],
+  "toolsAndSecurity": ["Github", "Bitbucket", "OWASPTop10"],
+  "plannedOrExperimental": ["Docker", "GraphQL"]
+}
