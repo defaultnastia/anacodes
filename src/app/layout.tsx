@@ -24,10 +24,18 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className={clsx(lato.className, "min-h-screen flex flex-col")}>
-        <Header />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+      <body
+        className={clsx(
+          lato.className,
+          "min-h-screen flex flex-col bg-background text-foreground",
+        )}
+      >
+        {/* Centered content wrapper */}
+        <div className="w-full max-w-[2400px] mx-auto px-4 flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

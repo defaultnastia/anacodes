@@ -29,7 +29,7 @@ const TechStackGrid: FC = () => {
             key={category}
             className="bg-background rounded-2xl shadow-theme p-4"
           >
-            <h3 className="text-xl font-semibold mb-4 capitalize text-foreground">
+            <h3 className="text-xl font-semibold mb-4 capitalize text-accent">
               {category}
             </h3>
             <ul className="grid grid-cols-2 sm:grid-cols-3 gap-4">

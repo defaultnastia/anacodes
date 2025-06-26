@@ -18,7 +18,7 @@ const Hero: FC = () => (
           <h1
             className={clsx(
               marker.className,
-              "text-3xl desktop:text-4xl text-gradient-accent font-bold"
+              "text-3xl desktop:text-4xl text-gradient-accent font-bold",
             )}
           >
             Hey there, <br className="tablet:hidden desktop:inline" /> I&apos;m
@@ -30,8 +30,8 @@ const Hero: FC = () => (
             working with JavaScript, React, and TypeScript, and enjoy
             collaborating on projects that challenge me to grow.
             <br />
-            I&apos;m currently working as a full-stack developer on a TravelTech
-            project, using React, Node.js, and GraphQL as my core stack.
+            These days, I&apos;m focused on a TravelTech project, working
+            full-stack with React, Node.js, and GraphQL.
           </p>
         </div>
         <Image
@@ -44,7 +44,9 @@ const Hero: FC = () => (
         />
       </div>
     </div>
-    <div className={clsx(css.running, "hidden tablet:block")}>
+    <div
+      className={clsx(css.running, "hidden tablet:block px-10 desktop:px-32")}
+    >
       <div className={clsx(css.running__inner, "bg-gradient-accent")}>
         {[...Array(2)].map((_, i) => (
           <p

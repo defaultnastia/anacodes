@@ -6,16 +6,16 @@
 :root {
   --background: #f9fafc;
   --foreground: #1e293b;
-  --accent: #068e3f;
-  --faded-accent: #068e3f98;
+  --accent: #0072bb;
+  --faded-accent: #0074bbdd;
 }
 
 /* Dark theme (toggle via .dark class) */
 .dark {
   --background: #0f172a;
   --foreground: #f9fafb;
-  --accent: #3b82f6;
-  --faded-accent: #2f96c2cc;
+  --accent: #0387d8;
+  --faded-accent: #020304dd;
 }
 
 /* Accent gradients */
