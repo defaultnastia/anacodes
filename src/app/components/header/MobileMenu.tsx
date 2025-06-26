@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Navigation from "../navigation/Navigation";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import NavigationMobile from "../navigation/NavigationMobile";

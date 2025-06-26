@@ -20,11 +20,12 @@ const Hero = () => (
               "text-3xl desktop:text-4xl text-gradient-accent font-bold"
             )}
           >
-            Hey there, <br className="tablet:hidden desktop:inline" /> I'm Ana.
+            Hey there, <br className="tablet:hidden desktop:inline" /> I&apos;m
+            Ana.
           </h1>
           <p className="leading-relaxed">
-            I'm a web developer with solid background in QA and a passion for
-            building modern, creative, and efficient applications. I love
+            I&apos;m a web developer with solid background in QA and a passion
+            for building modern, creative, and efficient applications. I love
             working with JavaScript, React, and TypeScript, and enjoy
             collaborating on projects that challenge me to grow.
           </p>

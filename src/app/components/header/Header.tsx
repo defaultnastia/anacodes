@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import Icon from "../Icon";

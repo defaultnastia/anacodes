@@ -1,4 +1,4 @@
-import { ProjectLinkType, ProjectType } from "@/app/types";
+import { ProjectType } from "@/app/types";
 import React from "react";
 import clsx from "clsx";
 import { Fraunces } from "next/font/google";

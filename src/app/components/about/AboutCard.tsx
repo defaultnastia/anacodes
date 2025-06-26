@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 
 const iconClass = "text-5xl tablet:text-6xl absolute -top-8 tablet:-top-10";
 const cardClass =

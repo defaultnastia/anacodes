@@ -1,5 +1,4 @@
 import React from "react";
-import Icon from "../Icon";
 import { Fraunces } from "next/font/google";
 import clsx from "clsx";
 import Socials from "../contacts/Socials";

@@ -1,3 +1,5 @@
+import React from "react";
+
 export const getAboutText = (accentClass: string) => [
   {
     topic: "expierience",

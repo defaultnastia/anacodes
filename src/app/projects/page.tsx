@@ -8,8 +8,8 @@ const ProjectsPage = () => {
     <div className="px-8 tablet:px-10 desktop:px-32 py-12">
       <p className="text-center text-fadedAccent">
         ⚠️ This page is currently a work in progress. Only the desktop version
-        is available, and the 'Details' button is not yet functional. Thank you
-        for your understanding! ⚠️
+        is available, and the &lsquo;Details&rsquo; button is not yet
+        functional. Thank you for your understanding! ⚠️
       </p>
       <ProjectsList projects={data} />
     </div>

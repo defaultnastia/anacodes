@@ -1,70 +1,22 @@
-import pluginJs from "@eslint/js";
-import tsEslint from "@typescript-eslint/eslint-plugin";
-import tsParser from "@typescript-eslint/parser";
-import prettierPlugin from "eslint-plugin-prettier";
-import importPlugin from 'eslint-plugin-import';
+import js from "@eslint/js";
+import globals from "globals";
+import tseslint from "typescript-eslint";
+import pluginReact from "eslint-plugin-react";
+import { defineConfig } from "eslint/config";
 
-export default [
+export default defineConfig([
   {
-    files: ["**/src/**/*.{js,mjs,cjs,ts}"],
-    languageOptions: {
-      globals: {
-        browser: "readonly"
-      },
-      parser: tsParser,
-      sourceType: "module",
-      ecmaVersion: 2021,
-    },
-    plugins: {
-      "@eslint/js": pluginJs,
-      "@typescript-eslint": tsEslint,
-      "import": importPlugin,
-      "prettier": prettierPlugin,
-    },
-    rules: {
-      "indent": ["error", 4],
-      "quotes": ["error", "single"],
-      "semi": ["error", "always"],
-      "import/prefer-default-export": "off",
-      "import/no-extraneous-dependencies": "off",
-      'import/order': [
-        'error',
-        {
-          "groups": [
-            ['builtin', 'external'],
-            ['internal', 'parent', 'sibling', 'index'],
-          ],
-          'newlines-between': 'always',
-        },
-      ],
-      "no-underscore-dangle": "off",
-      "no-unused-expressions": "off",
-      "no-useless-constructor": "off",
-      "class-methods-use-this": "off",
-      "consistent-return": "off",
-      "no-unused-vars": "warn",
-      "no-shadow": "off",
-      "no-param-reassign": "off",
-      "prettier/prettier": "error"
-    },
+    files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+    plugins: { js },
+    extends: ["js/recommended"],
   },
   {
-    files: ["**/src/**/*.js"],
-    languageOptions: {
-      sourceType: "commonjs",
-    },
-    rules: {
-    },
+    files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+    languageOptions: { globals: globals.browser },
   },
-
+  tseslint.configs.recommended,
+  pluginReact.configs.flat.recommended,
   {
-    files: ["**/src/**/*.ts"],
-    rules: {
-      ...tsEslint.configs.recommended.rules,
-    },
+    ignores: [".next/", "node_modules/", "dist/", "build/"],
   },
-
-  {
-    ignores: ["node_modules/*", "dist/*"],
-  },
-];
+]);
