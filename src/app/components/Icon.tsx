@@ -1,12 +1,12 @@
-import React from "react";
+import React, { type FC } from "react";
 
-interface IconProps {
+interface Props {
   name: string;
   className?: string;
   size?: number;
 }
 
-const Icon = ({ name, size = 40, className = "" }: IconProps) => {
+const Icon: FC<Props> = ({ name, size = 40, className = "" }) => {
   return (
     <div>
       <svg width={size} height={size} className={className}>

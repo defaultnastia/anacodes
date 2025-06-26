@@ -1,9 +1,11 @@
-import { ProjectType } from "@/app/types";
-import React from "react";
+import React, { type FC } from "react";
 import clsx from "clsx";
 import { Fraunces } from "next/font/google";
+
 import DemoSection from "./DemoSection";
 import LinksSection from "./LinksSection";
+
+import { type ProjectType } from "@/app/types";
 
 //TODO add search by stack options (via hashtag)
 
@@ -18,10 +20,10 @@ const marker = Fraunces({
 
 const accentClass = clsx(
   marker.className,
-  "w-fit text-gradient-accent font-bold uppercase text-2xl"
+  "w-fit text-gradient-accent font-bold uppercase text-2xl",
 );
 
-const Project = ({ project }: Props) => {
+const Project: FC<Props> = ({ project }) => {
   return (
     <div className="flex justify-between">
       <DemoSection projectId={project.id} />

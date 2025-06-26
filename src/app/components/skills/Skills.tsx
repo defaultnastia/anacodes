@@ -1,11 +1,12 @@
 "use client";
 
-import React from "react";
-import SkillCard from "./SkillCard";
+import React, { type FC } from "react";
 import skills from "src/data/stack.json";
 import { Fraunces } from "next/font/google";
 import clsx from "clsx";
 import Carousel from "react-multi-carousel";
+
+import SkillCard from "./SkillCard";
 import "react-multi-carousel/lib/styles.css";
 
 const marker = Fraunces({
@@ -36,13 +37,13 @@ const responsive = {
   },
 };
 
-const Skills = () => {
+const Skills: FC = () => {
   return (
     <div className="py-8 tablet:py-12 bg-gradient-accent">
       <h2
         className={clsx(
           marker.className,
-          "text-center text-xl text-background desktop:text-2xl uppercase font-semibold"
+          "text-center text-xl text-background desktop:text-2xl uppercase font-semibold",
         )}
       >
         Technologies

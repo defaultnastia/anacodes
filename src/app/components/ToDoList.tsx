@@ -1,7 +1,7 @@
 import Image from "next/image";
-import React from "react";
+import React, { type FC } from "react";
 
-const ToDoList = () => {
+const ToDoList: FC = () => {
   return (
     <div>
       <p className="text-center text-fadedAccent">

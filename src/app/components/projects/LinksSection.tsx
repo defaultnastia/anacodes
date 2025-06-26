@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import Link from "next/link";
-import React from "react";
+import React, { type FC } from "react";
 
 type Props = {
   links: { name: string; link: string }[];
@@ -10,7 +10,7 @@ type Props = {
 const linkClass =
   "pr-4 border-r-2 border-accent last-of-type:border-none font-bold";
 
-const LinksSection = ({ links, className }: Props) => {
+const LinksSection: FC<Props> = ({ links, className }) => {
   return (
     <ul className={clsx("flex gap-4 min-w-fit", className)}>
       <li className={linkClass}>

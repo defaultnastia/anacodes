@@ -1,12 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { type FC, useState } from "react";
 import { usePathname } from "next/navigation";
+
 import Icon from "../Icon";
 import Navigation from "../navigation/Navigation";
 import MobileMenu from "./MobileMenu";
 
-const Header = () => {
+const Header: FC = () => {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 

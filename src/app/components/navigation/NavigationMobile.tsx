@@ -1,15 +1,15 @@
 import clsx from "clsx";
 import Link from "next/link";
-import React from "react";
+import React, { type FC } from "react";
 
-interface NavigationProps {
+interface Props {
   pathname: string;
   close: () => void;
 }
 
 const activeLink = 'before:content-["⸺"] after:content-["⸺"]';
 
-const NavigationMobile = ({ pathname, close }: NavigationProps) => {
+const NavigationMobile: FC<Props> = ({ pathname, close }) => {
   return (
     <nav className="h-full flex justify-center items-center">
       <ul className=" flex flex-col gap-4 justify-center items-center text-background">

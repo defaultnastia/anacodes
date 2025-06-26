@@ -1,9 +1,9 @@
-import React from "react";
-import ProjectsList from "../components/projects/ProjectsList";
+import React, { type FC } from "react";
 
+import ProjectsList from "../components/projects/ProjectsList";
 import data from "../../data/projects.json";
 
-const ProjectsPage = () => {
+const ProjectsPage: FC = () => {
   return (
     <div className="px-8 tablet:px-10 desktop:px-32 py-12">
       <p className="text-center text-fadedAccent">

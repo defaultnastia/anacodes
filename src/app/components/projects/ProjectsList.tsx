@@ -1,12 +1,14 @@
-import { ProjectType } from "@/app/types";
-import React from "react";
+import React, { type FC } from "react";
+
 import Project from "./Project";
+
+import { type ProjectType } from "@/app/types";
 
 type Props = {
   projects: ProjectType[];
 };
 
-const ProjectsList = ({ projects }: Props) => {
+const ProjectsList: FC<Props> = ({ projects }) => {
   return (
     <ul className="flex flex-col gap-32 py-8">
       {projects.map((project) => (

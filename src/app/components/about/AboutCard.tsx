@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import React, { ReactNode } from "react";
+import React, { type FC, type ReactNode } from "react";
 
 const iconClass = "text-5xl tablet:text-6xl absolute -top-8 tablet:-top-10";
 const cardClass =
@@ -13,7 +13,7 @@ interface Props {
   topic: string;
 }
 
-const AboutCard = ({ icon, text, topic }: Props) => (
+const AboutCard: FC<Props> = ({ icon, text, topic }) => (
   <li className={clsx(cardClass)} id={topic} key={topic}>
     <p className={iconClass}>
       <span role="img">{icon}</span>

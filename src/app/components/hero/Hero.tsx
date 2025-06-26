@@ -1,15 +1,16 @@
 import clsx from "clsx";
 import { Fraunces } from "next/font/google";
-import React from "react";
-import css from "./Hero.module.css";
+import React, { type FC } from "react";
 import Image from "next/image";
+
+import css from "./Hero.module.css";
 
 const marker = Fraunces({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
 
-const Hero = () => (
+const Hero: FC = () => (
   <>
     <div className="p-8 tablet:py-16 tablet:px-10 desktop:px-32">
       <div className="rounded-xl shadow-theme flex flex-col tablet:flex-row items-center overflow-hidden max-w-lg tablet:max-w-none m-auto desktop:max-h-[360px]">
@@ -17,7 +18,7 @@ const Hero = () => (
           <h1
             className={clsx(
               marker.className,
-              "text-3xl desktop:text-4xl text-gradient-accent font-bold"
+              "text-3xl desktop:text-4xl text-gradient-accent font-bold",
             )}
           >
             Hey there, <br className="tablet:hidden desktop:inline" /> I&apos;m

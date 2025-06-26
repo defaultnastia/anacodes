@@ -1,8 +1,8 @@
 import clsx from "clsx";
 import Link from "next/link";
-import React from "react";
+import React, { type FC } from "react";
 
-interface NavigationProps {
+interface Props {
   pathname: string;
 }
 
@@ -11,7 +11,7 @@ const defaultLink =
 const activeLink =
   "flex items-center py-2 border-2 border-accent rounded-xl px-4 mx-0 text-accent font-bold";
 
-const Navigation = ({ pathname }: NavigationProps) => {
+const Navigation: FC<Props> = ({ pathname }) => {
   return (
     <nav className="w-full">
       <ul className=" hidden tablet:flex gap-8 justify-center items-center">

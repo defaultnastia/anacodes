@@ -1,6 +1,7 @@
-import React from "react";
+import React, { type FC } from "react";
 import { Fraunces } from "next/font/google";
 import clsx from "clsx";
+
 import Socials from "../contacts/Socials";
 
 const marker = Fraunces({
@@ -8,14 +9,14 @@ const marker = Fraunces({
   weight: ["400", "600"],
 });
 
-const Footer = () => {
+const Footer: FC = () => {
   return (
     <div className="p-8 tablet:px-10 desktop:px-32 w-full tablet:py-10 flex flex-col tablet:flex-row items-center tablet:justify-between">
       <div className="tablet:max-w-80 desktop:max-w-100 text-center tablet:text-left">
         <h3
           className={clsx(
             marker.className,
-            "font-medium text-l uppercase mb-4"
+            "font-medium text-l uppercase mb-4",
           )}
         >
           Anastasiia Drachuk
@@ -30,7 +31,7 @@ const Footer = () => {
         <h3
           className={clsx(
             marker.className,
-            "hidden tablet:block font-medium text-xl uppercase mb-4"
+            "hidden tablet:block font-medium text-xl uppercase mb-4",
           )}
         >
           Social

@@ -1,12 +1,12 @@
 import clsx from "clsx";
 import Image from "next/image";
-import React from "react";
+import React, { type FC } from "react";
 
 type Props = {
   projectId: string;
   className?: string;
 };
-const WebDemo = ({ projectId, className }: Props) => {
+const WebDemo: FC<Props> = ({ projectId, className }) => {
   return (
     <div className={clsx(className, "relative w-[500px]")}>
       <Image

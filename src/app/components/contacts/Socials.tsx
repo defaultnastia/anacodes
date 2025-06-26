@@ -1,21 +1,22 @@
-import React from "react";
-import Icon from "../Icon";
+import React, { type FC } from "react";
 import clsx from "clsx";
+
+import Icon from "../Icon";
 import data from "../../../data/socials.json";
 
 const iconAppearance =
   "drop-shadow-sm fill-stone-500 hover:fill-accent hover:cursor-pointer";
 
-interface SocialsProps {
+interface Props {
   className?: string;
 }
 
-const Socials = ({ className }: SocialsProps) => {
+const Socials: FC<Props> = ({ className }) => {
   return (
     <ul
       className={clsx(
         "flex items-center justify-center tablet:justify-end gap-2 desktop:gap-5 flex-grow py-5 tablet:pt-0",
-        className
+        className,
       )}
     >
       {data.map(({ href, icon, label }) => (

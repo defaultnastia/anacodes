@@ -2,9 +2,10 @@ import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Lato } from "next/font/google";
+import clsx from "clsx";
+
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import clsx from "clsx";
 
 export const metadata: Metadata = {
   title: "Ana Codes",

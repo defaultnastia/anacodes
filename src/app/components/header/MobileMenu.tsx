@@ -1,24 +1,25 @@
 "use client";
 
-import React from "react";
+import React, { type FC } from "react";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+
 import NavigationMobile from "../navigation/NavigationMobile";
 import Icon from "../Icon";
 
-interface MobileMenuProps {
+interface Props {
   isOpen: boolean;
   close: () => void;
 }
 
-const MobileMenu = ({ isOpen = false, close }: MobileMenuProps) => {
+const MobileMenu: FC<Props> = ({ isOpen = false, close }) => {
   const pathname = usePathname();
 
   return (
     <div
       className={clsx(
         "fixed w-screen h-56 bg-gradient-accent overscroll-none duration-700 transition-all z-10",
-        isOpen ? "top-0 opacity-100" : "top-[-224px] opacity-0"
+        isOpen ? "top-0 opacity-100" : "top-[-224px] opacity-0",
       )}
     >
       <button
