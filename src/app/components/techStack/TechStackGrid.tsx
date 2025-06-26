@@ -1,7 +1,8 @@
-import { getTechStack } from "@/data/getTechStack";
-import { FC } from "react";
+import React, { type FC } from "react";
 import { Fraunces } from "next/font/google";
 import clsx from "clsx";
+
+import { getTechStack } from "@/data/getTechStack";
 
 const marker = Fraunces({
   subsets: ["latin"],
@@ -16,7 +17,7 @@ const TechStackGrid: FC = () => {
       <h2
         className={clsx(
           marker.className,
-          "text-center text-xl desktop:text-2xl uppercase font-semibold text-foreground"
+          "text-center text-xl desktop:text-2xl uppercase font-semibold text-foreground",
         )}
       >
         Tech Stack

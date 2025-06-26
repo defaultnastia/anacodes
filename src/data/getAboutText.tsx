@@ -22,8 +22,8 @@ export const getAboutText = (accentClass: string) => [
       <>
         Eventually, I got curious about development, so I learned JavaScript and
         HTML/CSS. I loved it and kept going with React, Redux, TypeScript,
-        Tailwind, and Node.js — and now, I’m diving into Next.js. I’ve also got
-        plans to learn Docker and Flutter soon to broaden my{" "}
+        Tailwind, and Node.js — and now, I’m diving into Next.js and GraphQL.
+        I’ve also got plans to learn AWS and ReactNative soon to broaden my{" "}
         <span className={accentClass}>hard skills</span>.
       </>
     ),

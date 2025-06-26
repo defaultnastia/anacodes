@@ -18,7 +18,7 @@ const Hero: FC = () => (
           <h1
             className={clsx(
               marker.className,
-              "text-3xl desktop:text-4xl text-gradient-accent font-bold",
+              "text-3xl desktop:text-4xl text-gradient-accent font-bold"
             )}
           >
             Hey there, <br className="tablet:hidden desktop:inline" /> I&apos;m
@@ -29,6 +29,9 @@ const Hero: FC = () => (
             for building modern, creative, and efficient applications. I love
             working with JavaScript, React, and TypeScript, and enjoy
             collaborating on projects that challenge me to grow.
+            <br />
+            I&apos;m currently working as a full-stack developer on a TravelTech
+            project, using React, Node.js, and GraphQL as my core stack.
           </p>
         </div>
         <Image
