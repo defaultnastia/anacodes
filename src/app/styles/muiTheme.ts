@@ -39,10 +39,10 @@ const projectTheme = createTheme({
   breakpoints: {
     values: {
       xs: 0,
-      sm: 375, // mobile
-      md: 768, // tablet
-      lg: 1280, // desktop
-      xl: 1536,
+      sm: 481, // mobile
+      md: 769, // tablet
+      lg: 1281, // desktop
+      xl: 1537,
     },
   },
   typography: {

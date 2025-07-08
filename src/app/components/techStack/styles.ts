@@ -1,17 +1,19 @@
+import { SectionWithPaddingStyled } from "@/app/styles/styles";
 import { Box, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-export const TechStackSection = styled("div")(({ theme }) => ({
-  display: "grid",
-  gridTemplateColumns: "1fr",
-  gap: "24px",
+export const TechStackSection = styled(SectionWithPaddingStyled)(
+  ({ theme }) => ({
+    display: "grid",
+    gridTemplateColumns: "1fr",
+    gap: "24px",
 
-  [theme.breakpoints.up("sm")]: {
-    gridTemplateColumns: "1fr 1fr",
-    gap: "40px",
-    padding: "40px 120px",
-  },
-}));
+    [theme.breakpoints.up("sm")]: {
+      gridTemplateColumns: "1fr 1fr",
+      gap: "40px",
+    },
+  })
+);
 
 export const AccentSeparatorStyled = styled("div")(({ theme }) => ({
   height: "100px",
@@ -39,12 +41,10 @@ export const HeaderContainerStyled = styled(Stack)(({ theme }) => ({
 export const CategoryCard = styled(Box)({
   backgroundColor: "white",
   borderRadius: 0,
-  padding: "16px",
 });
 
 export const CategoryTitle = styled(Typography)({
-  marginBottom: "8px",
-  textAlign: "center",
+  marginBottom: "20px",
 });
 
 export const ItemList = styled("ul")({
