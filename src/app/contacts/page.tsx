@@ -1,15 +1,10 @@
-import React, { type FC } from "react";
-
-import ToDoList from "../components/ToDoList";
-import Socials from "../components/contacts/Socials";
+import React, { FC } from "react";
 
 const ContactsPage: FC = () => {
   return (
-    <div className="px-8 tablet:px-10 desktop:px-32 py-12">
-      <div className="w-fit m-auto border-2 pt-0 tablet:pt-6 px-4 tablet:px-12 rounded-lg border-accent flex justify-center mb-8">
-        <Socials />
-      </div>
-      <ToDoList />
+    <div>
+      <h1>Contacts</h1>
+      <p>This is the contacts page.</p>
     </div>
   );
 };

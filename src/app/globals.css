@@ -2,20 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Light theme (default) */
 :root {
-  --background: #f9fafc;
-  --foreground: #1e293b;
-  --accent: #0072bb;
-  --faded-accent: #0074bbdd;
-}
-
-/* Dark theme (toggle via .dark class) */
-.dark {
-  --background: #0f172a;
-  --foreground: #f9fafb;
-  --accent: #0387d8;
-  --faded-accent: #020304dd;
+  --background: white;
+  --foreground: black;
+  --faded: grey;
+  --accent: #9e2c21;
 }
 
 /* Accent gradients */
@@ -36,7 +27,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Haskoy", Arial, Helvetica, sans-serif;
   letter-spacing: 0.025em;
   font-size: 20px;
 }

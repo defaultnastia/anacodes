@@ -1,3 +1,14 @@
+export enum NAVIGATION {
+  HOME = "/",
+  PROJECTS = "/projects",
+  CONTACTS = "/contacts",
+}
+
+export enum PAGES {
+  HOME = "/",
+  PROJECTS = "projects",
+}
+
 export type StackListOptions =
   | "AppRouter"
   | "Axios"

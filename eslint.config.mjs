@@ -25,6 +25,7 @@ export default defineConfig([
       import: importPlugin,
       prettier,
       "@typescript-eslint": tsEslint,
+      "@typescript-eslint/no-empty-interface": "off",
     },
     settings: {
       react: {
