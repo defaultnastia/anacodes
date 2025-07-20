@@ -1,8 +1,10 @@
 "use client";
 import React from "react";
 import { usePathname } from "next/navigation";
-import { NAVIGATION } from "@/app/types";
+
 import { HeaderNavContainer, HeaderNavLinkStyled } from "./styles";
+
+import { NAVIGATION } from "@/app/types";
 
 const HeaderNav = () => {
   const pathname = usePathname();

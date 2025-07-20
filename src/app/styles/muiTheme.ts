@@ -2,6 +2,13 @@
 import { createTheme } from "@mui/material/styles";
 import { type CSSProperties } from "react";
 
+export const COLORS = {
+  BACKGROUND: "#ffffff",
+  FOREGROUND: "#000000",
+  FADED: "#a3a3a3",
+  ACCENT: "#9e2c21",
+} as const;
+
 export const variants = [
   "bodyRegular",
   "bodyRegularBold",
@@ -43,6 +50,18 @@ const projectTheme = createTheme({
       md: 769, // tablet
       lg: 1281, // desktop
       xl: 1537,
+    },
+  },
+  palette: {
+    background: {
+      default: COLORS.BACKGROUND,
+    },
+    text: {
+      primary: COLORS.FOREGROUND,
+      secondary: COLORS.FADED,
+    },
+    secondary: {
+      main: COLORS.ACCENT,
     },
   },
   typography: {
@@ -92,6 +111,5 @@ const projectTheme = createTheme({
       textDecorationLine: "underline",
     },
   },
-  spacing: 8,
 });
 export default projectTheme;

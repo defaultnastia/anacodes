@@ -1,11 +1,15 @@
 "use client";
 import React, { type FC } from "react";
+import { usePathname } from "next/navigation";
 
 import Socials from "../contacts/Socials";
 import { FooterContainer, FooterSocialBlock, FooterTextStyled } from "./styles";
-import { Typography } from "@mui/material";
 
 const Footer: FC = () => {
+  const pathname = usePathname();
+
+  if (pathname === "/contacts") return null;
+
   return (
     <FooterContainer>
       <FooterTextStyled variant="h3">Anastasiia Drachuk</FooterTextStyled>

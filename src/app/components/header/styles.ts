@@ -8,6 +8,7 @@ export const HeaderNavContainer = styled("nav")(({ theme }) => ({
   gap: "40px",
   justifyContent: "center",
   width: "100%",
+  zIndex: 10,
 
   [theme.breakpoints.up("sm")]: {
     gap: "80px",

@@ -6,8 +6,8 @@ export const FooterContainer = styled(Stack)(({ theme }) => ({
   width: "calc(100% - 8px)",
   alignItems: "center",
   margin: "0 4px 4px",
-  backgroundColor: "var(--foreground)",
   gap: "20px",
+  border: `1px solid ${theme.palette.text.primary}`,
 
   [theme.breakpoints.up("md")]: {
     justifyContent: "space-between",
@@ -20,7 +20,6 @@ export const FooterContainer = styled(Stack)(({ theme }) => ({
 }));
 
 export const FooterTextStyled = styled(Typography)(({ theme }) => ({
-  color: "var(--background)",
   width: "100%",
   textAlign: "center",
 

@@ -16,3 +16,15 @@ export const SectionWithPaddingStyled = styled(Box)(({ theme }) => ({
     padding: "40px 120px",
   },
 }));
+
+export const DottedBackgroundStyled = styled(Box)(({ theme }) => ({
+  minHeight: "100vh",
+
+  [theme.breakpoints.up("md")]: {
+    backgroundImage: `radial-gradient(${theme.palette.text.secondary} 1px, transparent 0)`,
+    backgroundSize: "40px 40px",
+    backgroundAttachment: "fixed",
+    backgroundPosition: "top left",
+    backgroundRepeat: "repeat",
+  },
+}));

@@ -1,29 +1,33 @@
-import clsx from "clsx";
-import Image from "next/image";
 import React, { type FC } from "react";
+
+import {
+  WebDemoContainerStyled,
+  WebDemoFrameStyled,
+  WebDemoImgStyled,
+} from "./styles";
 
 type Props = {
   projectId: string;
-  className?: string;
 };
-const WebDemo: FC<Props> = ({ projectId, className }) => {
+
+const WebDemo: FC<Props> = ({ projectId }) => {
   return (
-    <div className={clsx(className, "relative w-[500px]")}>
-      <Image
+    <WebDemoContainerStyled>
+      <WebDemoImgStyled
         src={`/images/projects/web-${projectId}.png`}
-        width={400}
-        height={280}
+        width={228}
+        height={390}
         alt="project demo image"
-        className="relative top-5 left-14 object-cover h-[228px] w-[390px]"
       />
-      <Image
+      <WebDemoFrameStyled
         src="/images/macbook.webp"
         width={500}
         height={280}
-        alt="laptop with project demo"
-        className="absolute top-0 left-0"
+        alt=""
+        aria-hidden="true"
+        role="presentation"
       />
-    </div>
+    </WebDemoContainerStyled>
   );
 };
 

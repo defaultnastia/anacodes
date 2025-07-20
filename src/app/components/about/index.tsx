@@ -1,7 +1,7 @@
 "use client";
 import React, { type FC } from "react";
-
 import { Typography } from "@mui/material";
+
 import {
   AboutItemStyled,
   AboutSectionStyled,

@@ -1,36 +1,26 @@
 import React, { type FC } from "react";
-import clsx from "clsx";
+import { Link } from "@mui/material";
 
 import Icon from "../Icon";
 import data from "../../../data/socials.json";
+import { SocialsListItemStyled, SocialsListStyled } from "./styles";
 
-const iconAppearance = "fill-background hover:fill-accent hover:cursor-pointer";
-
-interface Props {
-  className?: string;
-}
-
-const Socials: FC<Props> = ({ className }) => {
+const Socials: FC = () => {
   return (
-    <ul
-      className={clsx(
-        "flex items-center justify-center tablet:justify-end gap-2 desktop:gap-5 flex-grow tablet:pt-0",
-        className
-      )}
-    >
+    <SocialsListStyled>
       {data.map(({ href, icon, label }) => (
-        <li key={icon}>
-          <a
+        <SocialsListItemStyled key={icon}>
+          <Link
             href={href}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={label}
           >
-            <Icon name={icon} size={40} className={iconAppearance} />
-          </a>
-        </li>
+            <Icon name={icon} size={40} />
+          </Link>
+        </SocialsListItemStyled>
       ))}
-    </ul>
+    </SocialsListStyled>
   );
 };
 

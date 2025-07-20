@@ -1,6 +1,7 @@
-import { SectionWithPaddingStyled } from "@/app/styles/styles";
 import { Stack } from "@mui/material";
 import { styled } from "@mui/material/styles";
+
+import { SectionWithPaddingStyled } from "@/app/styles/styles";
 
 export const AboutSectionStyled = styled(SectionWithPaddingStyled)(
   ({ theme }) => ({
@@ -17,7 +18,7 @@ export const AboutSectionStyled = styled(SectionWithPaddingStyled)(
       flexDirection: "row",
       gap: "120px",
     },
-  })
+  }),
 );
 
 export const AboutItemStyled = styled(Stack)(({ theme }) => ({

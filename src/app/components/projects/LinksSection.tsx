@@ -1,35 +1,33 @@
-import clsx from "clsx";
 import Link from "next/link";
 import React, { type FC } from "react";
+import { Typography } from "@mui/material";
+
+import { DemoLinksListStyled, DemoLinkItemStyled } from "./styles";
 
 type Props = {
   links: { name: string; link: string }[];
-  className?: string;
 };
 
-const linkClass =
-  "pr-4 border-r-2 border-accent last-of-type:border-none font-bold";
+// == == == == ‼ Add a dialog before release !! == == == ==
 
-const LinksSection: FC<Props> = ({ links, className }) => {
+const DemoLinksSection: FC<Props> = ({ links }) => {
   return (
-    <ul className={clsx("flex gap-4 min-w-fit", className)}>
-      <li className={linkClass}>
-        <Link href="">Details</Link>
-      </li>
+    <DemoLinksListStyled>
+      {/* <DemoLinkItemStyled>
+        <Link href="">
+          <Typography>Details</Typography>
+        </Link>
+      </DemoLinkItemStyled> */}
+
       {links.map((link) => (
-        <li key={link.link} className={linkClass}>
-          <a
-            href={link.link}
-            className="text-nowrap"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {link.name} ↗
-          </a>
-        </li>
+        <DemoLinkItemStyled key={link.link}>
+          <Link href={link.link} target="_blank" rel="noreferrer">
+            <Typography>{link.name} ↗</Typography>
+          </Link>
+        </DemoLinkItemStyled>
       ))}
-    </ul>
+    </DemoLinksListStyled>
   );
 };
 
-export default LinksSection;
+export default DemoLinksSection;

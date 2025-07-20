@@ -1,8 +1,8 @@
 "use client";
 
 import React, { type FC } from "react";
-import { getTechStack } from "@/data/getTechStack";
-import { Box, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
+
 import {
   AccentSeparatorStyled,
   CategoryCard,
@@ -13,12 +13,14 @@ import {
   TechStackSection,
 } from "./styles";
 
+import { getTechStack } from "@/data/getTechStack";
+
 const TechStackGrid: FC = () => {
   const techStack = getTechStack();
 
   return (
     <>
-      <Stack flexDirection="row">
+      <Stack flexDirection={{ md: "row" }}>
         <AccentSeparatorStyled />
         <HeaderContainerStyled>
           <Typography variant="h4">Tech</Typography>

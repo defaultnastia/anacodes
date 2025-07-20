@@ -5,23 +5,12 @@
 :root {
   --background: white;
   --foreground: black;
-  --faded: grey;
-  --accent: #9e2c21;
-}
-
-/* Accent gradients */
-
-.bg-gradient-accent {
-  @apply bg-gradient-to-r from-accent to-fadedAccent;
-}
-
-.text-gradient-accent {
-  @apply bg-gradient-to-r from-accent from-0% via-fadedAccent via-50% to-accent to-60% bg-clip-text text-transparent;
 }
 
 * {
   transition: 0.15s;
-  transition-property: transform, color, border-color, padding, margin, fill;
+  transition-property:
+    transform, color, border-color, padding, margin, fill, scale;
 }
 
 body {

@@ -1,6 +1,7 @@
-import { SectionWithPaddingStyled } from "@/app/styles/styles";
 import { Box, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
+
+import { SectionWithPaddingStyled } from "@/app/styles/styles";
 
 export const TechStackSection = styled(SectionWithPaddingStyled)(
   ({ theme }) => ({
@@ -12,12 +13,13 @@ export const TechStackSection = styled(SectionWithPaddingStyled)(
       gridTemplateColumns: "1fr 1fr",
       gap: "40px",
     },
-  })
+  }),
 );
 
 export const AccentSeparatorStyled = styled("div")(({ theme }) => ({
-  height: "100px",
-  width: "60%",
+  height: "200px",
+  width: "100%",
+  marginBottom: "20px",
 
   backgroundImage: 'url("/images/backgroundStack.webp")',
   backgroundSize: "cover",
@@ -27,16 +29,20 @@ export const AccentSeparatorStyled = styled("div")(({ theme }) => ({
   [theme.breakpoints.up("sm")]: {
     height: "400px",
   },
+  [theme.breakpoints.up("md")]: {
+    width: "60%",
+    marginBottom: "0",
+  },
 }));
 
-export const HeaderContainerStyled = styled(Stack)(({ theme }) => ({
+export const HeaderContainerStyled = styled(Stack)({
   flex: 1,
   justifyContent: "center",
   alignItems: "center",
   textAlign: "center",
   border: `1px solid black`,
   margin: "0 4px",
-}));
+});
 
 export const CategoryCard = styled(Box)({
   backgroundColor: "white",
