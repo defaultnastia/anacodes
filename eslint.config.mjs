@@ -34,6 +34,8 @@ export default defineConfig([
     rules: {
       ...tsEslint.configs.recommended.rules,
       ...pluginReact.configs.flat.recommended.rules,
+      "@typescript-eslint/no-empty-interface": "off",
+      "@typescript-eslint/no-empty-object-type": "off",
 
       "import/order": [
         "error",

@@ -1,30 +1,33 @@
-import clsx from "clsx";
-import Image from "next/image";
 import React, { type FC } from "react";
+
+import {
+  MobileDemoContainerStyled,
+  MobileDemoFrameStyled,
+  MobileDemoImgStyled,
+} from "./styles";
 
 type Props = {
   projectId: string;
-  className?: string;
 };
 
-const MobileDemo: FC<Props> = ({ projectId, className }) => {
+const MobileDemo: FC<Props> = ({ projectId }) => {
   return (
-    <div className={clsx(className, "absolute top-8 right-4")}>
-      <Image
+    <MobileDemoContainerStyled>
+      <MobileDemoImgStyled
         src={`/images/projects/mobile-${projectId}.png`}
-        width={160}
-        height={200}
+        width={140}
+        height={296}
         alt="project demo image"
-        className="absolute top-3 right-2 object-cover h-[296px] w-[140px] rounded-2xl"
       />
-      <Image
+      <MobileDemoFrameStyled
         src="/images/iphone.webp"
         width={160}
-        height={200}
-        alt="smartphone with project demo"
-        className="relative top-0 left-0"
+        height={320}
+        alt=""
+        aria-hidden="true"
+        role="presentation"
       />
-    </div>
+    </MobileDemoContainerStyled>
   );
 };
 

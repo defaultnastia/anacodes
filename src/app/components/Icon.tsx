@@ -1,18 +1,18 @@
+import { Box } from "@mui/material";
 import React, { type FC } from "react";
 
 interface Props {
   name: string;
-  className?: string;
   size?: number;
 }
 
-const Icon: FC<Props> = ({ name, size = 40, className = "" }) => {
+const Icon: FC<Props> = ({ name, size = 40 }) => {
   return (
-    <div>
-      <svg width={size} height={size} className={className}>
+    <Box>
+      <svg width={size} height={size}>
         <use xlinkHref={`/images/icons.svg#icon-${name}`} />
       </svg>
-    </div>
+    </Box>
   );
 };
 

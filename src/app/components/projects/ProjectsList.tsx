@@ -1,6 +1,8 @@
 import React, { type FC } from "react";
+import { List } from "@mui/material";
 
 import Project from "./Project";
+import { ProjectsListStyled } from "./styles";
 
 import { type ProjectType } from "@/app/types";
 
@@ -10,13 +12,13 @@ type Props = {
 
 const ProjectsList: FC<Props> = ({ projects }) => {
   return (
-    <ul className="flex flex-col gap-32 py-8">
+    <ProjectsListStyled>
       {projects.map((project) => (
-        <li key={project.id}>
+        <List key={project.id}>
           <Project project={project} />
-        </li>
+        </List>
       ))}
-    </ul>
+    </ProjectsListStyled>
   );
 };
 

@@ -1,4 +1,4 @@
-import type React from "react";
+import { type ElementType } from "react";
 import {
   Languages,
   ShieldCheck,
@@ -19,11 +19,15 @@ import {
   Palette,
   PackagePlus,
   Package,
+  Bug,
+  Cuboid,
+  BookOpen,
+  Hexagon,
 } from "lucide-react";
 
 export type TechItem = {
   name: string;
-  icon: React.ElementType;
+  icon: ElementType;
 };
 
 export type TechCategory = {
@@ -40,13 +44,13 @@ export const getTechStack = (): TechCategory => ({
     { name: "TypeScript", icon: Type },
     { name: "React", icon: Atom },
     { name: "React Router", icon: Router },
-    { name: "Redux", icon: GitBranch },
-    { name: "Redux Toolkit", icon: GitBranch },
-    { name: "Next.js", icon: Globe },
+    { name: "Redux", icon: Cuboid },
+    { name: "Redux Toolkit", icon: Cuboid },
+    { name: "Next.js", icon: BookOpen },
     { name: "i18next", icon: Languages },
   ],
   backend: [
-    { name: "Node.js", icon: Server },
+    { name: "Node.js", icon: Hexagon },
     { name: "Express", icon: Server },
     { name: "MongoDB", icon: Database },
     { name: "Mongoose", icon: Database },
@@ -64,5 +68,6 @@ export const getTechStack = (): TechCategory => ({
   experimental: [
     { name: "Docker", icon: Settings2 },
     { name: "GraphQL", icon: Globe },
+    { name: "Jest", icon: Bug },
   ],
 });
