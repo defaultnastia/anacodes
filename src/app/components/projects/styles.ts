@@ -20,7 +20,7 @@ export const ProjectSectionStyled = styled(SectionWithPaddingStyled)(
       flexDirection: "row",
       gap: "60px",
     },
-  })
+  }),
 );
 
 export const ProjectDescriptionStyled = styled(Stack)(({ theme }) => ({
